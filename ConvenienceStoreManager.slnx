@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ConvenienceStore.Business/ConvenienceStore.Business.csproj" Id="7b5b4bc5-1ef6-4bc8-991e-d67a8cc29256" />
+  <Project Path="ConvenienceStore.Data/ConvenienceStore.Data.csproj" Id="45fd314e-ee7d-4fbc-a911-d45e1103afff" />
+  <Project Path="ConvenienceStore.UI/ConvenienceStore.UI.csproj" Id="cf06f6f2-2dc2-42d1-90d5-0b204d99c3c4" />
+</Solution>
