@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{6A19217F-3B67-4F63-B5B1-A9319AB51AC2}</ProjectGuid><OutputType>WinExe</OutputType><RootNamespace>ConvenienceStore.Task3Runner</RootNamespace><AssemblyName>ConvenienceStore.Task3Runner</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects><OutputPath>bin\$(Configuration)\</OutputPath></PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/></ItemGroup>
+  <ItemGroup><Compile Include="Program.cs"/><None Include="App.config"/></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ConvenienceStore.UI\ConvenienceStore.UI.csproj"><Project>{CF06F6F2-2DC2-42D1-90D5-0B204D99C3C4}</Project><Name>ConvenienceStore.UI</Name></ProjectReference>
+    <ProjectReference Include="..\..\ConvenienceStore.Business\ConvenienceStore.Business.csproj"><Project>{7B5B4BC5-1EF6-4BC8-991E-D67A8CC29256}</Project><Name>ConvenienceStore.Business</Name></ProjectReference>
+    <ProjectReference Include="..\..\ConvenienceStore.Data\ConvenienceStore.Data.csproj"><Project>{45FD314E-EE7D-4FBC-A911-D45E1103AFFF}</Project><Name>ConvenienceStore.Data</Name></ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

@@ -20,6 +20,7 @@ namespace ConvenienceStore.Data.Entities
         public string Barcode { get; set; }
 
         public decimal Price { get; set; }
+        [ConcurrencyCheck]
         public int Stock { get; set; }
 
         public int CategoryId { get; set; }

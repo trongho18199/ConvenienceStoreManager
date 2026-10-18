@@ -85,4 +85,21 @@
     <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" />
+  <ItemGroup>
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\PurchaseReceipt.cs" />
+    <Compile Include="Entities\PurchaseReceiptLine.cs" />
+    <Compile Include="Entities\SaleInvoice.cs" />
+    <Compile Include="Entities\SaleInvoiceLine.cs" />
+    <Compile Include="Entities\StockMovement.cs" />
+    <Compile Include="Entities\StockMovementKind.cs" />
+    <Compile Include="Entities\Supplier.cs" />
+    <Compile Include="Repositories\EfTask3Session.cs" />
+    <Compile Include="Repositories\ITask3Session.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\202610141700000_Task3Operations.Designer.cs"><DependentUpon>202610141700000_Task3Operations.cs</DependentUpon></Compile>
+    <Compile Include="Migrations\202610141700000_Task3Operations.cs" />
+    <EmbeddedResource Include="Migrations\202610141700000_Task3Operations.resx"><DependentUpon>202610141700000_Task3Operations.cs</DependentUpon></EmbeddedResource>
+  </ItemGroup>
 </Project>

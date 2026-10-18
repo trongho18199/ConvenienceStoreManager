@@ -1,0 +1,132 @@
+﻿namespace ConvenienceStore.UI.Forms
+{
+    partial class FrmRevenueReport
+    {
+        private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Panel pnlHeader;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblSubtitle;
+        private System.Windows.Forms.Label lblFrom;
+        private System.Windows.Forms.DateTimePicker dtpFrom;
+        private System.Windows.Forms.Label lblTo;
+        private System.Windows.Forms.DateTimePicker dtpTo;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Label lblSummary;
+        private System.Windows.Forms.TabControl tabs;
+        private System.Windows.Forms.Label lblHint;
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && components != null) components.Dispose();
+            base.Dispose(disposing);
+        }
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Size = new System.Drawing.Size(1120, 76);
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(28, 57, 73);
+            this.pnlHeader.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.Controls.Add(this.pnlHeader);
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblTitle.Text = "BÁO CÁO DOANH THU";
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Location = new System.Drawing.Point(24, 12);
+            this.lblTitle.Size = new System.Drawing.Size(1060, 30);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.pnlHeader.Controls.Add(this.lblTitle);
+            this.lblSubtitle = new System.Windows.Forms.Label();
+            this.lblSubtitle.Text = "Lọc khoảng ngày  /  Tổng hợp theo ngày  /  Đối chiếu hóa đơn";
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Location = new System.Drawing.Point(25, 47);
+            this.lblSubtitle.Size = new System.Drawing.Size(1060, 22);
+            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(210, 230, 230);
+            this.pnlHeader.Controls.Add(this.lblSubtitle);
+            this.lblFrom = new System.Windows.Forms.Label();
+            this.lblFrom.Text = "Từ ngày";
+            this.lblFrom.Name = "lblFrom";
+            this.lblFrom.Location = new System.Drawing.Point(24, 98);
+            this.lblFrom.Size = new System.Drawing.Size(70, 26);
+            this.Controls.Add(this.lblFrom);
+            this.dtpFrom = new System.Windows.Forms.DateTimePicker();
+            this.dtpFrom.Name = "dtpFrom";
+            this.dtpFrom.Location = new System.Drawing.Point(100, 93);
+            this.dtpFrom.Size = new System.Drawing.Size(170, 30);
+            this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFrom.CustomFormat = "dd/MM/yyyy";
+            this.Controls.Add(this.dtpFrom);
+            this.lblTo = new System.Windows.Forms.Label();
+            this.lblTo.Text = "Đến ngày";
+            this.lblTo.Name = "lblTo";
+            this.lblTo.Location = new System.Drawing.Point(295, 98);
+            this.lblTo.Size = new System.Drawing.Size(85, 26);
+            this.Controls.Add(this.lblTo);
+            this.dtpTo = new System.Windows.Forms.DateTimePicker();
+            this.dtpTo.Name = "dtpTo";
+            this.dtpTo.Location = new System.Drawing.Point(385, 93);
+            this.dtpTo.Size = new System.Drawing.Size(170, 30);
+            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpTo.CustomFormat = "dd/MM/yyyy";
+            this.Controls.Add(this.dtpTo);
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.btnFilter.Text = "Xem báo cáo";
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Location = new System.Drawing.Point(830, 88);
+            this.btnFilter.Size = new System.Drawing.Size(125, 38);
+            this.btnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFilter.BackColor = System.Drawing.Color.FromArgb(17, 121, 114);
+            this.btnFilter.ForeColor = System.Drawing.Color.White;
+            this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFilter.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            this.Controls.Add(this.btnFilter);
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnExport.Text = "Xuất CSV";
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Location = new System.Drawing.Point(970, 88);
+            this.btnExport.Size = new System.Drawing.Size(125, 38);
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(17, 121, 114);
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExport.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            this.Controls.Add(this.btnExport);
+            this.lblSummary = new System.Windows.Forms.Label();
+            this.lblSummary.Text = "Chưa tải báo cáo";
+            this.lblSummary.Name = "lblSummary";
+            this.lblSummary.Location = new System.Drawing.Point(24, 150);
+            this.lblSummary.Size = new System.Drawing.Size(1070, 35);
+            this.lblSummary.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lblSummary.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.Controls.Add(this.lblSummary);
+            this.tabs = new System.Windows.Forms.TabControl();
+            this.tabs.Name = "tabs";
+            this.tabs.Location = new System.Drawing.Point(24, 205);
+            this.tabs.Size = new System.Drawing.Size(1071, 435);
+            this.tabs.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.Controls.Add(this.tabs);
+            this.lblHint = new System.Windows.Forms.Label();
+            this.lblHint.Text = "Doanh thu = Tiền hàng - Giảm giá. Tính trọn ngày kết thúc; không bao gồm phiếu nhập.";
+            this.lblHint.Name = "lblHint";
+            this.lblHint.Location = new System.Drawing.Point(24, 657);
+            this.lblHint.Size = new System.Drawing.Size(1070, 28);
+            this.lblHint.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            this.Controls.Add(this.lblHint);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(245, 248, 250);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ClientSize = new System.Drawing.Size(1120, 700);
+            this.MinimumSize = new System.Drawing.Size(1136, 739);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "BÁO CÁO DOANH THU";
+            this.Name = "FrmRevenueReport";
+            this.Load += new System.EventHandler(this.Form_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+    }
+}

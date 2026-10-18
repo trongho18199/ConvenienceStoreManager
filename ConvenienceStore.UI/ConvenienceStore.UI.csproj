@@ -106,4 +106,19 @@
     <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.targets'))" />
   </Target>
   <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" />
+  <ItemGroup>
+    <Compile Include="Forms\FrmPurchaseReceipt.Designer.cs"><DependentUpon>FrmPurchaseReceipt.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmPurchaseReceipt.cs"><SubType>Form</SubType></Compile>
+    <EmbeddedResource Include="Forms\FrmPurchaseReceipt.resx"><DependentUpon>FrmPurchaseReceipt.cs</DependentUpon></EmbeddedResource>
+    <Compile Include="Forms\FrmRevenueReport.Designer.cs"><DependentUpon>FrmRevenueReport.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmRevenueReport.cs"><SubType>Form</SubType></Compile>
+    <EmbeddedResource Include="Forms\FrmRevenueReport.resx"><DependentUpon>FrmRevenueReport.cs</DependentUpon></EmbeddedResource>
+    <Compile Include="Forms\FrmSales.Designer.cs"><DependentUpon>FrmSales.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmSales.cs"><SubType>Form</SubType></Compile>
+    <EmbeddedResource Include="Forms\FrmSales.resx"><DependentUpon>FrmSales.cs</DependentUpon></EmbeddedResource>
+    <Compile Include="Forms\FrmStockMovement.Designer.cs"><DependentUpon>FrmStockMovement.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FrmStockMovement.cs"><SubType>Form</SubType></Compile>
+    <EmbeddedResource Include="Forms\FrmStockMovement.resx"><DependentUpon>FrmStockMovement.cs</DependentUpon></EmbeddedResource>
+    <Compile Include="Helpers\Task3Ui.cs" />
+  </ItemGroup>
 </Project>

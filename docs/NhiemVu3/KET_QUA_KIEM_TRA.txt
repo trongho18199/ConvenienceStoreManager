@@ -1,0 +1,37 @@
+PASS purchase totals and increases both stocks
+PASS purchase audit snapshots
+PASS purchase retry cannot add stock twice
+PASS VIP price discount payment change and stock
+PASS invoice stores price and discount snapshots
+PASS checkout retry cannot sell twice
+PASS insufficient stock
+PASS insufficient payment
+PASS zero quantity
+PASS negative quantity
+PASS duplicate product rows
+PASS deleted product
+PASS changed quoted total
+PASS server ignores forged cart price
+PASS cashier cannot purchase
+PASS warehouse cannot sell
+PASS inactive admin denied
+PASS missing login denied
+PASS cashier cannot read revenue
+PASS save failure rolls back all service changes using transaction contract
+PASS commit failure rolls back through transaction contract
+PASS bad second purchase line
+PASS bad second line leaves no partial stock or receipt
+PASS report includes end day 23:59 and excludes following midnight
+PASS daily and invoice revenue totals reconcile
+PASS empty report returns zero
+PASS reversed report dates
+PASS stock opening plus receipts minus sales equals closing
+PASS stock product and movement type filters
+PASS actual form add button 0
+PASS form opens and closes 0
+PASS actual form add button 1
+PASS form opens and closes 1
+PASS form opens and closes 2
+PASS form opens and closes 3
+ALL 35 CHECKS PASSED (memory session; SQL Server integration still requires Windows checks)
+Gtk not found (missing LD_LIBRARY_PATH to libgtk-x11-2.0.so.0?), using built-in colorscheme
